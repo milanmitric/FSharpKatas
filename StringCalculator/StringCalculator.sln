@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StringCalculator", "StringCalculator\StringCalculator.fsproj", "{E14984A3-057E-41E3-BF07-55496D0BCC0B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StringCalculatorTests", "StringCalculatorTests\StringCalculatorTests.fsproj", "{B8C24638-4644-403F-84D5-A252596D6A60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E14984A3-057E-41E3-BF07-55496D0BCC0B}.Debug|x64.ActiveCfg = Debug|x64
+		{E14984A3-057E-41E3-BF07-55496D0BCC0B}.Debug|x64.Build.0 = Debug|x64
+		{E14984A3-057E-41E3-BF07-55496D0BCC0B}.Release|x64.ActiveCfg = Release|x64
+		{E14984A3-057E-41E3-BF07-55496D0BCC0B}.Release|x64.Build.0 = Release|x64
+		{B8C24638-4644-403F-84D5-A252596D6A60}.Debug|x64.ActiveCfg = Debug|x64
+		{B8C24638-4644-403F-84D5-A252596D6A60}.Debug|x64.Build.0 = Debug|x64
+		{B8C24638-4644-403F-84D5-A252596D6A60}.Release|x64.ActiveCfg = Release|x64
+		{B8C24638-4644-403F-84D5-A252596D6A60}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F62773B2-ACE2-41CA-8413-28115BCB2EB9}
+	EndGlobalSection
+EndGlobal
