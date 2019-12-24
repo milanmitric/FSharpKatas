@@ -43,5 +43,5 @@ module StringCalculatorTests =
 
     [<Fact>]
     let ``Delimiter with multiple characters`` () =
-        Assert.Equal(6, Calculator.sum("//[***]\n1***2***3"))
+        Assert.Equal(66, Calculator.sum("//[****]\n11****22****33"))
 
