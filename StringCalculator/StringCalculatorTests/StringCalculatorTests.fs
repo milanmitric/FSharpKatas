@@ -3,45 +3,46 @@ namespace StringCalculatorTests
 module StringCalculatorTests = 
 
     open Xunit
+    open FsUnit.Xunit
     open StringCalculator
 
     [<Fact>]
     let ``Empty string returns zero`` () =
-        Assert.Equal(0, Calculator.sum(""))
+        Calculator.sum("") |> should equal 0
 
     [<Fact>]
     let ``Single number returned`` () =
-        Assert.Equal(1, Calculator.sum("1"))
+        Calculator.sum("1") |> should equal 1
 
     [<Fact>]
     let ``Sum of two numbers`` () =
-        Assert.Equal(3, Calculator.sum("1,2"))
+        Calculator.sum("1,2") |> should equal 3
 
     [<Fact>]
     let ``Sum of three numbers`` () =
-        Assert.Equal(6, Calculator.sum("1,2,3"))
+         Calculator.sum("1,2,3") |> should equal 6
 
     [<Fact>]
     let ``Sum of three numbers with newline separator`` () =
-        Assert.Equal(6, Calculator.sum("1\n2\n3"))
+        Calculator.sum("1\n2\n3") |> should equal 6
 
     [<Fact>]
     let ``Sum of three numbers with newline and coma separator`` () =
-        Assert.Equal(6, Calculator.sum("1\n2,3"))
+        Calculator.sum("1\n2,3") |> should equal 6
 
     [<Fact>]
     let ``Custom delimiter`` () =
-        Assert.Equal(3, Calculator.sum("//[;]\n1;2"))
+        Calculator.sum("//[;]\n1;2") |> should equal 3
 
     [<Fact>]
     let ``Negative numbers not allowed`` () =
-        Assert.Throws<Calculator.NegativeNumber>(fun () -> Calculator.sum("-1,2") |> ignore)
+        (fun () -> Calculator.sum("-1,2") |> ignore) |> should throw typeof<Calculator.NegativeNumber>
 
     [<Fact>]
     let ``Numbers over 1000 are ignored`` () =
-        Assert.Equal(6, Calculator.sum("1,2, 1001,3"))
+        Calculator.sum("1,2, 1001,3") |> should equal 6
 
     [<Fact>]
     let ``Delimiter with multiple characters`` () =
-        Assert.Equal(66, Calculator.sum("//[****]\n11****22****33"))
+        Calculator.sum("//[****]\n11****22****33") |> should equal 66
 

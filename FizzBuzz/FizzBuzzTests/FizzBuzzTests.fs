@@ -2,37 +2,39 @@ namespace FizzBuzzTests
 
 module FizzBuzzTests = 
 
+    open System
     open Xunit
     open FizzBuzz
+    open FsUnit.Xunit
 
     [<Fact>]
     let ``1 is number`` () =
-        Assert.Equal("1", Converter.doConvert(1))
+        Converter.doConvert(1) |> should equal "1"
 
     [<Fact>]
     let ``3 is Fizz`` () =
-        Assert.Equal("Fizz", Converter.doConvert(3))
+        Converter.doConvert(3) |> should equal "Fizz"
 
     [<Fact>]
     let ``6 is Fizz`` () =
-        Assert.Equal("Fizz", Converter.doConvert(6))
+        Converter.doConvert(6) |> should equal "Fizz"
 
     [<Fact>]
     let ``5 is Buzz`` () =
-        Assert.Equal("Buzz", Converter.doConvert(5))
+        Converter.doConvert(5) |> should equal "Buzz"
 
     [<Fact>]
     let ``10 is Buzz`` () = 
-        Assert.Equal("Buzz", Converter.doConvert(10))
+        Converter.doConvert(10) |> should equal "Buzz"
 
     [<Fact>]
     let ``Exception is thrown when value is over 100`` () =
-        Assert.Throws<Converter.InvalidInputExcepetion>(fun () -> Converter.doConvert(101) |> ignore)
+        (fun () -> Converter.doConvert(101) |> ignore) |> should throw typeof<ArgumentException>
 
     [<Fact>]
     let ``Exception is thrown when value is 0`` () =
-        Assert.Throws<Converter.InvalidInputExcepetion>(fun () -> Converter.doConvert(0) |> ignore)
+        (fun () -> Converter.doConvert(0) |> ignore) |> should throw typeof<ArgumentException>
 
     [<Fact>]
     let ``Exception is thrown when value is negative`` () =
-       Assert.Throws<Converter.InvalidInputExcepetion>(fun () -> Converter.doConvert(-1) |> ignore)
+       (fun () -> Converter.doConvert(-1) |> ignore) |> should throw typeof<ArgumentException>
