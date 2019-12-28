@@ -31,11 +31,11 @@ module StringCalculatorTests =
 
     [<Fact>]
     let ``Custom delimiter`` () =
-        Assert.Equal(3, Calculator.sum("//[;]\n1;2"));
+        Assert.Equal(3, Calculator.sum("//[;]\n1;2"))
 
     [<Fact>]
     let ``Negative numbers not allowed`` () =
-        Assert.Throws<Calculator.NegativeNumber>(fun () -> Calculator.sum("-1,2") |> ignore);
+        Assert.Throws<Calculator.NegativeNumber>(fun () -> Calculator.sum("-1,2") |> ignore)
 
     [<Fact>]
     let ``Numbers over 1000 are ignored`` () =
