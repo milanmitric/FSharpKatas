@@ -15,3 +15,5 @@ jobs:
         dotnet-version: 2.2.108
     - name: Build with dotnet
       run: dotnet build StringCalculator/StringCalculator.sln  --configuration Release
+    - name: Run unit tests
+      run: dotnet test StringCalculator/StringCalculator.sln
