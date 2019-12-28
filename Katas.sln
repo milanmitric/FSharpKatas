@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StringCalculator", "StringCalculator", "{B1401DD4-5F3B-41C7-9C02-AF3B6EC98890}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{D5173DB1-3E16-4754-911A-41C9DE0ED1CE}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "StringCalculator", "StringCalculator\StringCalculator\StringCalculator.fsproj", "{A8EC18B6-534D-4436-8241-E5D53E90D6E9}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "StringCalculatorTests", "StringCalculator\StringCalculatorTests\StringCalculatorTests.fsproj", "{73B61E29-355A-413B-80D1-F74E5D66D2C4}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FizzBuzz", "FizzBuzz\FizzBuzz\FizzBuzz.fsproj", "{4044D74C-C95B-46EE-AD94-1F9B06033A00}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FizzBuzzTests", "FizzBuzz\FizzBuzzTests\FizzBuzzTests.fsproj", "{56FA5700-1133-4A3F-ACC4-D5878BD19F19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8EC18B6-534D-4436-8241-E5D53E90D6E9}.Debug|x64.ActiveCfg = Debug|x64
+		{A8EC18B6-534D-4436-8241-E5D53E90D6E9}.Debug|x64.Build.0 = Debug|x64
+		{A8EC18B6-534D-4436-8241-E5D53E90D6E9}.Release|x64.ActiveCfg = Release|x64
+		{A8EC18B6-534D-4436-8241-E5D53E90D6E9}.Release|x64.Build.0 = Release|x64
+		{73B61E29-355A-413B-80D1-F74E5D66D2C4}.Debug|x64.ActiveCfg = Debug|x64
+		{73B61E29-355A-413B-80D1-F74E5D66D2C4}.Debug|x64.Build.0 = Debug|x64
+		{73B61E29-355A-413B-80D1-F74E5D66D2C4}.Release|x64.ActiveCfg = Release|x64
+		{73B61E29-355A-413B-80D1-F74E5D66D2C4}.Release|x64.Build.0 = Release|x64
+		{4044D74C-C95B-46EE-AD94-1F9B06033A00}.Debug|x64.ActiveCfg = Debug|x64
+		{4044D74C-C95B-46EE-AD94-1F9B06033A00}.Debug|x64.Build.0 = Debug|x64
+		{4044D74C-C95B-46EE-AD94-1F9B06033A00}.Release|x64.ActiveCfg = Release|x64
+		{4044D74C-C95B-46EE-AD94-1F9B06033A00}.Release|x64.Build.0 = Release|x64
+		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Debug|x64.ActiveCfg = Debug|x64
+		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Debug|x64.Build.0 = Debug|x64
+		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Release|x64.ActiveCfg = Release|x64
+		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8EC18B6-534D-4436-8241-E5D53E90D6E9} = {B1401DD4-5F3B-41C7-9C02-AF3B6EC98890}
+		{73B61E29-355A-413B-80D1-F74E5D66D2C4} = {B1401DD4-5F3B-41C7-9C02-AF3B6EC98890}
+		{4044D74C-C95B-46EE-AD94-1F9B06033A00} = {D5173DB1-3E16-4754-911A-41C9DE0ED1CE}
+		{56FA5700-1133-4A3F-ACC4-D5878BD19F19} = {D5173DB1-3E16-4754-911A-41C9DE0ED1CE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EA00EE1-17B8-4A05-B26D-E4AD23105B97}
+	EndGlobalSection
+EndGlobal
