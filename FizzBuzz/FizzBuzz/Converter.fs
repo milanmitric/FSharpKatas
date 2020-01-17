@@ -5,12 +5,12 @@ module Converter =
 
     let private (|Fizz|_|) (number: int) =
         match number with
-        | _ when number % 3 = 0 || (number |> string).Contains("3") -> Some Fizz
+        | _ when number % 3 = 0 || (number |> string).Contains "3" -> Some Fizz
         | _ -> None
 
     let private (|Buzz|_|) (number: int) =
         match number with
-        | _ when number % 5 = 0 || (number |> string).Contains("5") -> Some Buzz
+        | _ when number % 5 = 0 || (number |> string).Contains "5" -> Some Buzz
         | _ -> None
 
     let doConvert (number: int): string =

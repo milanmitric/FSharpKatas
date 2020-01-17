@@ -15,6 +15,12 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FizzBuzz", "FizzBuzz\FizzBu
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FizzBuzzTests", "FizzBuzz\FizzBuzzTests\FizzBuzzTests.fsproj", "{56FA5700-1133-4A3F-ACC4-D5878BD19F19}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StackCalculator", "StackCalculator", "{8676297D-DAF5-46DE-A002-F13ED689689A}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "StackCalculatorTests", "StackCalculator\StackCalculatorTests\StackCalculatorTests.fsproj", "{707B9FA7-E839-4F57-904A-827694991F34}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "StackCalculator", "StackCalculator\StackCalculator.fsproj", "{7EF95C84-9DC4-4A70-87C1-460AB408D410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -37,6 +43,14 @@ Global
 		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Debug|x64.Build.0 = Debug|x64
 		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Release|x64.ActiveCfg = Release|x64
 		{56FA5700-1133-4A3F-ACC4-D5878BD19F19}.Release|x64.Build.0 = Release|x64
+		{707B9FA7-E839-4F57-904A-827694991F34}.Debug|x64.ActiveCfg = Debug|x64
+		{707B9FA7-E839-4F57-904A-827694991F34}.Debug|x64.Build.0 = Debug|x64
+		{707B9FA7-E839-4F57-904A-827694991F34}.Release|x64.ActiveCfg = Release|x64
+		{707B9FA7-E839-4F57-904A-827694991F34}.Release|x64.Build.0 = Release|x64
+        {7EF95C84-9DC4-4A70-87C1-460AB408D410}.Debug|x64.ActiveCfg = Debug|x64
+        {7EF95C84-9DC4-4A70-87C1-460AB408D410}.Debug|x64.Build.0 = Debug|x64
+        {7EF95C84-9DC4-4A70-87C1-460AB408D410}.Release|x64.ActiveCfg = Release|x64
+        {7EF95C84-9DC4-4A70-87C1-460AB408D410}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +60,8 @@ Global
 		{73B61E29-355A-413B-80D1-F74E5D66D2C4} = {B1401DD4-5F3B-41C7-9C02-AF3B6EC98890}
 		{4044D74C-C95B-46EE-AD94-1F9B06033A00} = {D5173DB1-3E16-4754-911A-41C9DE0ED1CE}
 		{56FA5700-1133-4A3F-ACC4-D5878BD19F19} = {D5173DB1-3E16-4754-911A-41C9DE0ED1CE}
+		{707B9FA7-E839-4F57-904A-827694991F34} = {8676297D-DAF5-46DE-A002-F13ED689689A}
+		{7EF95C84-9DC4-4A70-87C1-460AB408D410} = {8676297D-DAF5-46DE-A002-F13ED689689A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5EA00EE1-17B8-4A05-B26D-E4AD23105B97}
