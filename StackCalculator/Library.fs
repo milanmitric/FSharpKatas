@@ -19,8 +19,17 @@ module Calculator =
             | [] -> failwith "Stack is empty"
             | top :: _ ->
                 (top, aStack)
-
-    let binary operation stack =
+                
+    let duplicate aStack =
+        let (topElement, _) = top aStack
+        push topElement aStack
+        
+    let swap aStack =
+        let (first, stack') = pop aStack
+        let (second, stack'') = pop stack'
+        push first stack'' |> push second  
+        
+    let private binary operation stack =            
         let first, stack' = pop stack
         let seconds, stack'' = pop stack'
         let result = operation first seconds
@@ -31,7 +40,7 @@ module Calculator =
     let SUB = binary (-)
     let DIV = binary (/)
 
-    let unary f stack =
+    let private unary f stack =
         let first, stack' = pop stack
         let result = f first
         push result stack'

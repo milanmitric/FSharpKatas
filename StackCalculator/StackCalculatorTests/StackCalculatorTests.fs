@@ -41,6 +41,16 @@ module StackCalculatorTests =
         stack |>  should equal [3.0; 1.0;]
         
     [<Fact>]
+    let ``Duplicate top number on stack`` () =
+        Calculator.EMPTY |> Calculator.FIVE |> Calculator.TWO |> Calculator.duplicate |>
+        readItems |> should equal [2.0; 2.0; 5.0]
+        
+    [<Fact>]
+    let ``Swap two top numbers on stack`` () =
+        Calculator.EMPTY |> Calculator.FIVE |> Calculator.THREE |> Calculator.swap |>
+        readItems |> should equal [5.0; 3.0]
+        
+    [<Fact>]
     let ``Add two top numbers on stack``() =
         Calculator.EMPTY |> Calculator.ONE |> Calculator.TWO |> Calculator.THREE |>
         Calculator.ADD |> readItems |> should equal [ 5.0; 1.0 ]
