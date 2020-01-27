@@ -4,4 +4,4 @@ Following katas are implemented:
  * [String Calculator](https://osherove.com/tdd-kata-1)
  * [Fizz Buzz](http://codingdojo.org/kata/FizzBuzz/)
  * [Stack Calculator](https://fsharpforfunandprofit.com/posts/stack-based-calculator/)
- * [CommandLineArguments](https://fsharpforfunandprofit.com/posts/pattern-matching-command-line/)
+ * [Command Line Arguments](https://fsharpforfunandprofit.com/posts/pattern-matching-command-line/)
